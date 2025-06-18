@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Humaaira!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #6a1b9a, #9c27b0, #f3e5f5);
+      color: #fff;
+      font-family: 'Quicksand', sans-serif;
+      overflow: hidden;
+      text-align: center;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 6rem;
+      color: #f8bbd0;
+      text-shadow: 0 0 10px #fff;
+      margin-top: 60px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 20px;
+      color: #f3e5f5;
+    }
+
+    .heart {
+      font-size: 2.2rem;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #e1bee7;
+    }
+
+    .firefly {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #fff59d;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: flicker 4s infinite ease-in-out;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 0.2; transform: translateY(0) scale(1); }
+      50% { opacity: 0.9; transform: translateY(-10px) scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>💜 Happy Birthday, Humaaira! 💜</h1>
+    <p>Happy 22nd Birthday Angel, I hope your day is filled with joy and kindness </p>
+    <p>You truly are the most beautiful and kindest person. I couldn't have asked for a better partner in this journey of life.</p>
+    <br>
+    <p> May Allah grant you all your heart's desires, bless you with endless barakah, and grant you many more years filled with joy and happiness 💚</p>
+
+  <div class="heart">💜 💜 💜<br>💜 💜 💜<br>💜 💜 💜</div>
+
+  <p class="footer">Forever yours,<br>Aadam 🍏</p>
+
+  <script>
+    for (let i = 0; i < 50; i++) {
+      const firefly = document.createElement('div');
+      firefly.classList.add('firefly');
+      firefly.style.left = Math.random() * 100 + 'vw';
+      firefly.style.top = Math.random() * 100 + 'vh';
+      firefly.style.animationDuration = (Math.random() * 5 + 3) + 's';
+      firefly.style.animationDelay = Math.random() * 5 + 's';
+      document.body.appendChild(firefly);
+    }
+  </script>
+</body>
+</html>
+
+
